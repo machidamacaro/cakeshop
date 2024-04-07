@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>Pâtisserie Mignonne</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital@0;1&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="reset.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="jquery-3.6.0.min.js"></script>
+		<script>
+			$(function(){
+				var openButton = $('#nav_icon');
+				var closeButton = $('#nav_icon_close');
+				var target = $('#nav_inner');
+				openButton.on('click',function(){
+					target.slideDown('fast');
+					openButton.css('display','none');
+				});
+				closeButton.on('click',function(){
+					target.slideUp('fast');
+					openButton.css('display','block')
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<header>
+			<h1><a href="#">Pâtisserie Mignonne</a></h1>
+			<nav>
+				<a href="#" id="nav_icon">
+					<img src="images/nav_icon.png" alt="">
+				</a>
+				<div id="nav_inner">
+					<a href="#" id="nav_icon_close">
+						<img src="images/nav_icon_close.png" alt="">
+					</a>
+					<ul>
+						<li><a href="#">HOME</a></li>
+						<li><a href="#">ABOUT</a></li>
+						<li><a href="#">NEWS</a></li>
+						<li><a href="#">LINE UP</a></li>
+						<li><a href="#">CONTACT</a></li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section id="home_visual">
+				<span>おいしいケーキ</span>
+			</section>
+			<section id="about">
+				<div class="inner">
+					<div id="content">
+						<h2>Pâtisserie Mignonne</h2>
+						<p>鹿児島市のとある静かな町に、2022年4月にオープンしました。<br>パティシエの厳選した材料を使用して作られたバリエーション豊かなケーキをご用意しております。<br>自然豊かなこの場所でお客様に優雅な時間を過ごしていただきたく、おしゃれなイートインスペースもご用意しております。<br>特別な日だけではなく、日常を少し彩るお手伝いをさせていただければ幸いです。</p>
+						<div id="btn_about">
+							<a href="#"><p>ABOUT</p></a>
+						</div>
+					</div>
+					<figure id="shop"><img src="images/shop_inside.jpg" alt=""></figure>
+				</div>
+			</section>
+			<section id="news">
+				<div class="inner">
+					<div class="title_btn">
+						<h2>NEWS</h2>
+						<div id="btn_news">
+							<a href="#"><p>お知らせ一覧を見る</p></a>
+						</div>
+					</div>
+					<div class="topics">
+						<nav>
+							<ul>
+								<li><a href="#"><time datetime="2022-07-25">2022-07-25</time>  8月のお休みのお知らせ</a></li>
+								<li><a href="#"><time datetime="2022-06-25">2022-06-25</time>  7月のお休みのお知らせ</a></li>
+								<li><a href="#"><time datetime="2022-06-01">2022-06-01</time>  新商品のお知らせ</a></li>
+								<li><a href="#"><time datetime="2022-05-25">2022-05-25</time>  6月のお休みのお知らせ</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</section>
+			<section id="lineup">
+				<div class="inner">
+					<h2>LINE UP</h2>
+					<div class="menu">
+						<ul>
+							<li id="cake">
+								<a href="#"><img src="images/cake_btn.png" alt="ケーキ"></a>
+							</li>
+							<li id="baked">
+								<a href="#"><img src="images/baked_btn.png" alt="焼き菓子"></a>
+							</li>
+							<li id="sweets">
+								<a href="#"><img src="images/sweets_btn.png" alt="おやつ菓子"></a>
+							</li>
+							<li id="season">
+								<a href="#"><img src="images/season_btn.png" alt="季節商品"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<section id="access">
+				<div class="inner">
+					<h2>ACCESS</h2>
+					<div class="access-wraapper">
+						<div class="text">
+							<h3>Pâtisserie Mignonne</h3>
+							<p>鹿児島県鹿児島市石谷町XXXX-XXXX</p>
+							<p>JR九州 鹿児島本線 「上伊集院駅」より車で10分</p>
+							<p class="tel">TEL.099-XXX-XXX</p>
+							<dl class="info">
+								<dt>営業時間</dt>
+								<dd>10:00～19:00</dd>
+								<dt>定休日</dt>
+								<dd><a href="#">新着情報</a>にて毎月お知らせ</dd>
+							</dl>
+						</div>
+						<div class="map">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27186.385835631067!2d130.44613671375203!3d31.59828696573748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x353e6863792d700b%3A0xaa52f72596f2da88!2z5LiK5LyK6ZuG6Zmi6aeF!5e0!3m2!1sja!2sjp!4v1657975482012!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+			<div class="inner">
+				<p><small>Copyright &copy; Pâtisserie Mignonne All rights reserved.</small></p>
+			</div>
+		</footer>
+	</body>
+</html>
+ 
